@@ -1,5 +1,21 @@
-# Vue 3 + TypeScript + Vite
+# Pokedex Stats Project
+### This project is used to view Pokémon data by retrieving information from the Poke API.
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### PokeAPI to use : https://pokeapi.co/
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+#### How to run this project
+
+1. Install all dependencies.
+```
+yarn install
+```
+
+2. Run the project
+```
+yarn dev
+```
+
+3. Your server will start at port 5174
+```
+http://localhost:5174/
+```
