@@ -91,10 +91,6 @@ onMounted(async () => {
 })
 
 watch(currentPage, loadPokemons)
-watch([search], () => {
-  currentPage.value = 1
-  loadPokemons()
-})
 
 const visiblePages = computed(() => {
   const pages: (number | string)[] = []
@@ -115,17 +111,6 @@ const visiblePages = computed(() => {
 function goToPage(page: number | string) {
   if (typeof page === 'number') currentPage.value = page
 }
-
-onMounted(async () => {
-  totalCount.value = await fetchPokemonCount()
-  await loadPokemons()
-})
-
-watch(currentPage, loadPokemons)
-watch([search], () => {
-  currentPage.value = 1
-  loadPokemons()
-})
 
 async function onSearchSubmit() {
   if (search.value.trim() === '') {
